@@ -19,7 +19,7 @@ variable "cidr_block_all_traffic" {
 }
 
 variable "ec2_key_name" {
-    default = "IAC_practice"  
+    default = "AWS_FirstServerLinux"  
 }
 
 variable "ports" {
