@@ -5,7 +5,7 @@ pipeline {
 
         stage('SCM Checkout') {
             steps {
-                git url: 'https://github.com/balajiaws9071/jenkinsautomation'
+                git credentialsId: '8e237d54-cc07-4aad-a3fe-51855a4d', url: 'https://github.com/balajiaws9071/jenkinsautomation.git'
             }
         }
 
