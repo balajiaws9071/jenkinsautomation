@@ -50,7 +50,7 @@ pipeline {
         stage ('Terraform Setup') {
             steps {
                 script {
-                    def tfHome = tool name: 'Terraform_0.12.6', type: 'org.jenkinsci.plugins.terraform.TerraformInstallation'
+                    def tfHome = tool name: 'Terraform_12', type: 'org.jenkinsci.plugins.terraform.TerraformInstallation'
                     
                 }              
             sh 'terraform --version'                    
