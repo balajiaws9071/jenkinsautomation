@@ -5,7 +5,7 @@ pipeline {
 
        stage('SCM Checkout') {
             steps {
-                git credentialsId: '8e237d54-cc07-4aad-a3fe-51855a4d84c1', url: 'https://github.com/pramodk05/java_maven_jenkins.git'
+                git credentialsId: '8e237d54-cc07-4aad-a3fe-51855a4d', url: 'https://github.com/balajiaws9071/jenkinsautomation.git'
             }
         }
 
@@ -48,7 +48,7 @@ pipeline {
         stage ('Terraform Setup') {
             steps {
                 script {
-                    def tfHome = tool name: 'Terraform_0.12.6', type: 'org.jenkinsci.plugins.terraform.TerraformInstallation'
+                    def tfHome = tool name: 'Terraform_12', type: 'org.jenkinsci.plugins.terraform.TerraformInstallation'
 
                 }
             sh 'terraform --version'
