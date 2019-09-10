@@ -11,7 +11,6 @@ tomcat::service { 'default': }
 
 file {'/opt/apache-tomcat/webapps/mvn-hello-world.war':
   ensure => 'directory',
-  ensure => 'file',
   owner  => 'tomcat',
   source => "puppet:///modules/tomcat/mvn-hello-world.war",
 }
